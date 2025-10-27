@@ -6,7 +6,7 @@ export interface Lesson {
   content: {
     whatYoullDo: string;
     analogy: string;
-    steps: { // <-- AÑADIMOS ESTA LÍNEA
+    steps: {
       title: string;
       description: string;
     }[];
@@ -52,7 +52,7 @@ export const lessonsData: Lesson[] = [
   {
     slug: '1-1',
     title: "Guía Rápida: Crea tu plan de lección en 2 minutos.",
-    module: 'Módulo 1: Ahorra Tiempo: El Profesor Eficiente',
+    module: "Módulo 1: Ahorra Tiempo: El Profesor Eficiente",
     prompt: `Actúa como un profesor de primaria experto. Dame un plan de lección detallado de 45 minutos para una clase de 3º grado sobre el ciclo del agua. Incluye: 1) Un objetivo de aprendizaje claro, 2) Una actividad de inicio (rompehielos) de 5 minutos, 3) Una explicación simple con una analogía para niños, y 4) Una actividad de cierre para comprobar la comprensión.`,
     content: {
       whatYoullDo: "Aprenderás a generar un plan de lección completo y listo para usar en menos tiempo del que tardas en hacerte un café.",
@@ -69,7 +69,7 @@ export const lessonsData: Lesson[] = [
   {
     slug: '1-2',
     title: "Cómo generar 10 preguntas de examen sobre la Revolución Francesa",
-    module: 'Módulo 1: Aumenta tu productividad: El Profesor Eficiente',
+    module: "Módulo 1: Ahorra Tiempo: El Profesor Eficiente",
     prompt: `Actúa como un profesor de historia de secundaria experto. Necesito crear un examen sobre la Revolución Francesa para una clase de 4º de la ESO. Por favor, genera 10 preguntas variadas: a) 5 preguntas de opción múltiple con 4 opciones cada una, indicando la respuesta correcta. b) 3 preguntas de desarrollo cortas que requieran una respuesta de 2-3 líneas. c) 2 preguntas de verdadero/falso, justificando la respuesta falsa. Los temas a cubrir son: Causas de la revolución, la toma de la Bastilla, el Reinado del Terror y Napoleón Bonaparte.`,
     content: {
       whatYoullDo: "Crearás una base sólida de preguntas variadas y justas para tu examen en menos de un minuto.",
@@ -85,7 +85,7 @@ export const lessonsData: Lesson[] = [
   {
     slug: '1-3',
     title: "Cómo adaptar un texto complejo para estudiantes con dificultades",
-    module: 'Módulo 1: Aumenta tu productividad: El Profesor Eficiente',
+    module: "Módulo 1: Ahorra Tiempo: El Profesor Eficiente",
     prompt: `Actúa como un experto en pedagogía y lingüística. Necesito que adaptes este texto para un alumno de [GRADO] con dificultades de lectura. El texto original es: "[PEGAR TEXTO AQUÍ]". Tu tarea es: 1. Reescribir el texto usando un vocabulario más sencillo y frases más cortas. 2. Explicar cualquier palabra o concepto complicado entre paréntesis de forma fácil de entender. 3. Mantener el significado y la intención original del texto intactos.`,
     content: {
       whatYoullDo: "Aprenderás a tomar cualquier texto, por complejo que sea, y transformarlo en algo accesible y comprensible para todos tus alumnos.",
@@ -103,24 +103,24 @@ export const lessonsData: Lesson[] = [
   // --- Módulo 2: Creatividad en el Aula ---
   {
     slug: '2-1',
-    title: "Cómo crear imágenes impactantes para tus presentaciones (ej. 'Un dinosaurio en Roma')",
-    module: 'Módulo 2: Creatividad en el Aula: El Profesor Inspirador',
-    prompt: `Actúa como un experto en diseño gráfico educativo. Genera una imagen en estilo ilustración digital para una presentación de primaria sobre el tema: 'Un tiranosaurio rex amigable de pie junto a una columna del Coliseo de Roma'. La imagen debe ser colorida, apropiada para niños, con un estilo artístico y educativo. La composición debe ser clara y centrada en el dinosaurio y el monumento.`,
+    title: "Cómo crear imágenes para tu presentación (ej. 'Un dinosaurio en Roma') usando IA",
+    module: "Módulo 2: Creatividad en el Aula: El Profesor Inspirador",
+    prompt: `Actúa como un experto en diseño gráfico educativo. Genera una imagen en estilo acuarela para una presentación de primaria sobre el tema: 'Un tiranosaurio rex visitando el Coliseo de Roma'. La imagen debe ser colorida, apropiada para niños, y con un estilo artístico y educativo.`,
     content: {
-      whatYoullDo: "Aprenderás a crear imágenes únicas y personalizadas para tus presentaciones, lecciones o actividades, sin saber dibujar. Tus alumnos se sorprenderán y tu material será mucho más memorable.",
-      analogy: "Piensa en los generadores de imágenes de IA como en un 'chef de arte digital'. Tú le das la receta (el 'prompt') y él cocina el plato (la imagen). Si no te gusta el resultado, pide cambios: 'hazlo más colorido', 'estilo cómic' hasta que esté perfecto. Tú eres el director artístico.",
+      whatYoullDo: "Aprenderás a crear imágenes únicas y personalizadas para tus presentaciones, lecciones o actividades, sin saber dibujar.",
+      analogy: "Piensa en los generadores de imágenes de IA como en un 'chef de arte digital'. Tú le das la receta (el 'prompt') y él cocina el plato (la imagen). Si no te gusta el resultado, le pides que cambie los ingredientes ('hazlo más colorido', 'estilo cómic') hasta que esté perfecto.",
       steps: [
-        { title: "Paso 1: Define la Escena Central", description: "Sé específico. Define claramente el sujeto (dinosaurio), el lugar (Coliseo), el estilo (acuarela) y el público (niños). Cuantos más detalles, mejor será el resultado." },
-        { title: "Paso 2: Escribe un Prompt Detallado", description: "Usa un lenguaje descriptivo. En lugar de 'dinosaurio en Roma', prueba: 'Un tiranosaurio rex amigable de pie junto a una columna del Coliseo de Roma, estilo ilustración digital para niños'." },
+        { title: "Paso 1: Piensa en la Escena", description: "Define claramente qué quieres ver. Sé específico: sujeto (dinosaurio), lugar (Coliseo), estilo (acuarela) y público (niños)." },
+        { title: "Paso 2: Escribe el Prompt Mágico", description: "Usa un lenguaje descriptivo. En lugar de 'dinosaurio en Roma', prueba 'Un tiranosaurio rex amigable de pie junto a una columna del Coliseo de Roma, estilo acuarela, ilustración para niños'." },
         { title: "Paso 3: Genera y Refina", description: "Pega el prompt en el generador de imágenes (como DALL-E 3 en ChatGPT Plus o Midjourney). Si no te gusta, pide cambios: 'hazlo más divertido', 'cambia el punto de vista'." },
-        { title: "Paso 4: Descarga y Usa", description: "Guarda la imagen en alta calidad. ¡Ahora tienes un recurso visual único para tu clase que captará la imaginación de tus alumnos!" }
+        { title: "Paso 4: Descarga y Usa", description: "Guarda la imagen en alta calidad y úsala en tu presentación. ¡Tus alumnos se sorprenderán!" }
       ]
     }
   },
   {
     slug: '2-2',
     title: "Cómo generar ideas para un proyecto de clase (ej. Feria de Ciencias)",
-    module: 'Módulo 2: Creatividad en el Aula: El Profesor Inspirador',
+    module: "Módulo 2: Creatividad en el Aula: El Profesor Inspirador",
     prompt: `Actúa como un profesor de ciencias creativo e innovador. Dame 10 ideas originales y fáciles de hacer para una feria de ciencias de primaria. Las ideas deben usar materiales caseros, ser seguras y explicar un principio científico de forma sencilla. Clasifica las ideas por área: biología, química, física y tierra/espacio.`,
     content: {
       whatYoullDo: "Nunca más te quedarás sin ideas para proyectos. Aprenderás a usar la IA como un torbellino de creatividad para generar propuestas que puedas adaptar a tu nivel y recursos.",
@@ -136,7 +136,7 @@ export const lessonsData: Lesson[] = [
   {
     slug: '2-3',
     title: "Cómo usar la IA para crear cuentos personalizados para tus alumnos",
-    module: 'Módulo 2: Creatividad en el Aula: El Profesor Inspirador',
+    module: "Módulo 2: Creatividad en el Aula: El Profesor Inspirador",
     prompt: `Escribe un cuento corto para niños de [GRADO] que incluya como personaje principal al alumno '[NOMBRE DEL ALUMNO]'. El cuento debe ser sobre [TEMA DEL CUENTO], debe tener una moraleja positiva y un lenguaje adecuado para su edad. El tono debe ser aventurero y divertido.`,
     content: {
       whatYoullDo: "Aprenderás a crear historias únicas que harán que tus alumnos se sientan los protagonistas de su propio aprendizaje. La personalización es la clave de la motivación.",
@@ -154,7 +154,7 @@ export const lessonsData: Lesson[] = [
   {
     slug: '3-1',
     title: "Cómo redactar un email profesional y empático para padres de familia",
-    module: 'Módulo 3: Comunicación Fácil: El Profesor Conectado',
+    module: "Módulo 3: Comunicación Fácil: El Profesor Conectado",
     prompt: `Actúa como un experto en comunicación y psicología educativa. Ayúdame a redactar un email a los padres de '[NOMBRE DEL ALUMNO]'. El motivo del email es comunicarles sobre [ASUNTO: ej. su progreso en matemáticas]. El tono debe ser profesional, empático, colaborativo y centrado en soluciones. Estructura el email con: 1) un asunto claro, 2) un saludo cálido, 3) el punto principal (positivo o a mejorar), 4) una propuesta de colaboración y 5) un cierre cordial.`,
     content: {
       whatYoullDo: "Aprenderás a transformar conversaciones difíciles en colaboraciones productivas, construyendo una relación de confianza con las familias.",
@@ -170,7 +170,7 @@ export const lessonsData: Lesson[] = [
   {
     slug: '3-2',
     title: "Cómo resumir las notas de una reunión de profesores en 5 puntos clave",
-    module: 'Módulo 3: Comunicación Fácil: El Profesor Conectado',
+    module: "Módulo 3: Comunicación Fácil: El Profesor Conectado",
     prompt: `Tengo las siguientes notas de una reunión de profesores: '[PEGAR NOTAS AQUÍ]'. Por favor, resume esta información en 5 puntos clave claros y concisos. Cada punto debe ser una acción, una decisión o un tema importante. El resumen debe ser profesional y fácil de entender para que pueda compartirlo con el equipo o para mi propio registro.`,
     content: {
       whatYoullDo: "Aprenderás a sintetizar horas de conversación en minutos, captando lo esencial para que tú y tus compañeros tengan claro cuáles son los siguientes pasos.",
